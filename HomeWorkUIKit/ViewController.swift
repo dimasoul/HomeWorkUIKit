@@ -33,6 +33,10 @@ class ViewController: UIViewController {
         sliderRed.minimumTrackTintColor = .red
         sliderGreen.minimumTrackTintColor = .green
         sliderBlue.minimumTrackTintColor = .blue
+        let sliderRedValue = CGFloat(sliderRed.value)
+        let sliderGreenValue = CGFloat(sliderGreen.value)
+        let sliderBlueValue = CGFloat(sliderBlue.value)
+        mainViewRGB.backgroundColor = UIColor(red: sliderRedValue, green: sliderGreenValue, blue: sliderBlueValue, alpha: 1)
         
         
         // Do any additional setup after loading the view.
