@@ -39,6 +39,7 @@ class ViewController: UIViewController {
         mainViewRGB.backgroundColor = UIColor(red: sliderRedValue, green: sliderGreenValue, blue: sliderBlueValue, alpha: 1)
         
         
+        
         // Do any additional setup after loading the view.
     }
 
