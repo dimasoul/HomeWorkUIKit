@@ -18,6 +18,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        valueRed.text = String(format: "%.2f", sliderRed.value)
+        valueGreen.text = String(format: "%.2f", sliderGreen.value)
+        valueBlue.text = String(format: "%.2f", sliderBlue.value)
         sliderRed.value = 0.50
         sliderBlue.value = 0.50
         sliderGreen.value = 0.50
@@ -31,16 +34,32 @@ class ViewController: UIViewController {
         sliderGreen.minimumTrackTintColor = .green
         sliderBlue.minimumTrackTintColor = .blue
         
+        
         // Do any additional setup after loading the view.
     }
 
     @IBAction func sliderActionRed() {
+        valueRed.text = String(format: "%.2f", sliderRed.value)
+        let sliderRedValue = CGFloat(sliderRed.value)
+        let sliderGreenValue = CGFloat(sliderGreen.value)
+        let sliderBlueValue = CGFloat(sliderBlue.value)
+        mainViewRGB.backgroundColor = UIColor(red: sliderRedValue, green: sliderGreenValue, blue: sliderBlueValue, alpha: 1)
     }
     
     @IBAction func sliderActionGreen() {
+        valueGreen.text = String(format: "%.2f", sliderGreen.value)
+        let sliderRedValue = CGFloat(sliderRed.value)
+        let sliderGreenValue = CGFloat(sliderGreen.value)
+        let sliderBlueValue = CGFloat(sliderBlue.value)
+        mainViewRGB.backgroundColor = UIColor(red: sliderRedValue, green: sliderGreenValue, blue: sliderBlueValue, alpha: 1)
     }
     
     @IBAction func sliserActionBlue() {
+        valueBlue.text = String(format: "%.2f", sliderBlue.value)
+        let sliderRedValue = CGFloat(sliderRed.value)
+        let sliderGreenValue = CGFloat(sliderGreen.value)
+        let sliderBlueValue = CGFloat(sliderBlue.value)
+        mainViewRGB.backgroundColor = UIColor(red: sliderRedValue, green: sliderGreenValue, blue: sliderBlueValue, alpha: 1)
     }
 }
 

@@ -23,6 +23,11 @@
                                     <constraint firstAttribute="width" constant="330" id="0jD-eS-PWp"/>
                                     <constraint firstAttribute="height" constant="181" id="s2g-1X-DiV"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="Ezq-Uz-CDr">
                                 <rect key="frame" x="20" y="438" width="374" height="110"/>
